@@ -1,5 +1,7 @@
 # Creational patterns
 
+![](./imgs/result.png)
+
 ## Used patterns
 1. Singleton - to provide a Random instance
 

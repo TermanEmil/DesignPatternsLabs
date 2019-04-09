@@ -4,15 +4,15 @@ namespace Lab2_Structural.Media.MediaResources
 {
     public class PersonAdaptedToMediaResource : IMediaResource
     {
-        private readonly IPerson _personAdaptee;
+        private readonly IPerson personAdaptee;
 
-        public string Title => $"{_personAdaptee.FirstName} {_personAdaptee.LastName}";
-        public string Description => _personAdaptee.Biografy;
-        public string CoverPhoto => _personAdaptee.ProfilePicture;
+        public string Title => $"{personAdaptee.FirstName} {personAdaptee.LastName}";
+        public string Description => personAdaptee.Biografy;
+        public string CoverPhoto => personAdaptee.ProfilePicture;
 
         public PersonAdaptedToMediaResource(IPerson person)
         {
-            _personAdaptee = person;
+            personAdaptee = person;
         }
     }
 }
